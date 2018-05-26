@@ -87,7 +87,7 @@ public class FragmentSend extends Fragment {
                         edAmount.getText().toString().trim().equalsIgnoreCase("0") ||
                         edAmount.getText().toString().equalsIgnoreCase(".")) {
                     tvTotalAmount.setText("0");
-                    tvFees.setText("0");
+                    edFees.setText("0");
                 } else {
                     double mainAmount = Double.parseDouble(edAmount.getText().toString());
                     double fees = (mainAmount * mainFee) / 100;
